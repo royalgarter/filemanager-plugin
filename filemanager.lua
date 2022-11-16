@@ -531,7 +531,7 @@ local function try_open_at_y(y)
 			-- Opens the absolute path in new tab
 			-- CurView():VSplitIndex(NewBufferFromFile(scanlist[y].abspath), 1)
             local nfile = scanlist[y].abspath
-            local rpath = shell.RunCommand('realpath ' .. nfile .. ' --relative-to=' .. os.Getwd())
+            local rpath = shell.RunCommand('realpath \'' .. nfile .. '\' --relative-to=\'' .. os.Getwd() .. '\'')
             toggle_tree()
 			micro.CurPane():NewTabCmd({string.sub(rpath, 1, -2)})
 			toggle_tree()
