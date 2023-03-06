@@ -30,21 +30,21 @@ If the directory is expanded, there will be a `+` to the left of it. If it is co
 
 The keybindings below are the equivalent to Micro's defaults, and not actually set by the plugin. If you've changed any of those keybindings, then that key is used instead.
 
-If you want to [keybind](https://github.com/zyedidia/micro/blob/master/runtime/help/keybindings.md#rebinding-keys) any of the operations/commands, bind to the labeled API in the table below.
+If you want to [keybind](https://github.com/zyedidia/micro/blob/master/runtime/help/keybindings.md#rebinding-keys) any of the operations/commands, bind to the commands like `command:tree`.
 
-| Command  | Keybinding(s)              | What it does                                                                                | API for `bindings.json`               |
-| :------- | :------------------------- | :------------------------------------------------------------------------------------------ | :------------------------------------ |
-| `tree`   | -                          | Open/close the tree                                                                         | `filemanager.toggle_tree`             |
-| -        | <kbd>Tab</kbd> & MouseLeft | Open a file, or go into the directory. Goes back a dir if on `..`                           | `filemanager.try_open_at_cursor`      |
-| -        | <kbd>→</kbd>               | Expand directory in tree listing                                                            | `filemanager.uncompress_at_cursor`    |
-| -        | <kbd>←</kbd>               | Collapse directory listing                                                                  | `filemanager.compress_at_cursor`      |
-| -        | <kbd>Shift ⬆</kbd>         | Go to the target's parent directory                                                         | `filemanager.goto_parent_dir`         |
-| -        | <kbd>Alt Shift {</kbd>     | Jump to the previous directory in the view                                                  | `filemanager.goto_next_dir`           |
-| -        | <kbd>Alt Shift }</kbd>     | Jump to the next directory in the view                                                      | `filemanager.goto_prev_dir`           |
-| `rm`     | -                          | Prompt to delete the target file/directory your cursor is on                                | `filemanager.prompt_delete_at_cursor` |
-| `rename` | -                          | Rename the file/directory your cursor is on, using the passed name                          | `filemanager.rename_at_cursor`        |
-| `touch`  | -                          | Make a new file under/into the file/directory your cursor is on, using the passed name      | `filemanager.new_file`                |
-| `mkdir`  | -                          | Make a new directory under/into the file/directory your cursor is on, using the passed name | `filemanager.new_dir`                 |
+| Command  | Keybinding(s)              | What it does                                                                                |
+| :------- | :------------------------- | :------------------------------------------------------------------------------------------ |
+| `tree`   | -                          | Open/close the tree                                                                         |
+| -        | <kbd>Tab</kbd> & MouseLeft | Open a file, or go into the directory. Goes back a dir if on `..`                           |
+| -        | <kbd>→</kbd>               | Expand directory in tree listing                                                            |
+| -        | <kbd>←</kbd>               | Collapse directory listing                                                                  |
+| -        | <kbd>Shift ⬆</kbd>         | Go to the target's parent directory                                                         |
+| -        | <kbd>Alt Shift {</kbd>     | Jump to the previous directory in the view                                                  |
+| -        | <kbd>Alt Shift }</kbd>     | Jump to the next directory in the view                                                      |
+| `rm`     | -                          | Prompt to delete the target file/directory your cursor is on                                |
+| `rename` | -                          | Rename the file/directory your cursor is on, using the passed name                          |
+| `touch`  | -                          | Make a new file under/into the file/directory your cursor is on, using the passed name      |
+| `mkdir`  | -                          | Make a new directory under/into the file/directory your cursor is on, using the passed name |
 
 #### Notes
 
